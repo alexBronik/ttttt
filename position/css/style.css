@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+.border {
+    width: 1000px;
+    font-size: 100px;
+    margin: 0 auto;
+    border: 5px red solid;
+    background-color: aqua;
+    display: inline-block;
+    line-height: 0;   
+}
+.img {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 100px;
+    display: inline-block;
+}   
+.text {
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    z-index: 2;
+    display: block;  
+    bottom: 400px;  
+    opacity: 0.5; 
+    color: rgb(48, 27, 0);
+}    
+.jpg {
+    display: block;
+    margin: 0 auto;
+    position: relative;      
+}
+.text-c {
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    z-index: 2;
+    display: block;  
+    bottom: 450px;  
+    opacity: 0.5; 
+    color: black;    
+}
+.text-b {
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    z-index: 2;
+    display: block;  
+    bottom: 450px;  
+    color: black;
+}
+.jpg-b {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    position: relative;      
+}
+a {
+    color: red;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+ul {
+    text-align: center;
+    font-size: 0;
+}
+ul li {
+    display: inline-block;
+    background: aqua;
+    font-size: 10px;
+    border-right: red solid 2px;
+}
+ul li:last-child {
+    border: none;
+}
+ul li:hover {
+    background: green; 
+    padding: 15px 35px;            
+}
+a:hover {
+    color: red;
+}
+ul li a {
+    text-decoration: none;
+    color: seagreen;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: block;
+}
+
+

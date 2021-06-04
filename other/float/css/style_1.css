@@ -1,0 +1,151 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+div {
+    outline: 2px solid red;
+}
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background: yellowgreen;
+    text-align: center;
+}
+
+
+
+.clear {
+    clear: left;
+}
+.in-float {
+    float: left;
+    height: 100px;
+}
+
+
+/* ---------- FLOAT 1 ---------- */
+.float-1 .in-float {
+    width: 33.33%;
+}
+/* ---------- FLOAT 2 ---------- */
+.float-2 .in-float {
+    width: 50%;
+}
+.float-2-cld-1 div {
+    height: 50%;
+}
+.float-2-cld-2 div {
+    height: 33.33%;
+}
+/* ---------- FLOAT 3 ---------- */
+.float-3-cld-1 {
+    width: 25%;
+}
+.float-3-cld-2 {
+    width: 75%;
+}
+.float-3-cld-2-cld-1, .float-3-cld-2-cld-2 {
+    height: 50%;
+}
+.float-3-cld-2-cld-2-cld {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+/* ---------- FLOAT 4 ---------- */
+.in-f-float-4_1 {
+    width: 75%;
+}
+.in-f-float-4_2 {
+    width: 25%;
+}
+.in-f-float-4_1-cld {
+    height: 50px;
+}
+.in-f-float-4_1-cld-1 {
+    width: 50%;
+    height: 50px;
+}
+.in-f-float-4_1-cld-2 {
+    width: 50%;
+    height: 50px;
+}
+.in-f-float-4_1-cld-1-cld-1 {
+    height: 25px;
+}
+.in-f-float-4_1-cld-1-cld-2 {
+    height: 25px;
+}
+.d {
+    width: 50%;
+    height: 25px;
+    float: left;
+}
+ul {
+    text-align: center;
+    font-size: 0;
+}
+ul li {
+    display: inline-block;
+    background: aqua;
+    padding: 10px 30px;
+    border-right: red solid 5px;
+    color: red;
+} 
+ul li:last-child {
+    border: none;
+} 
+ul li:hover {
+    background: green; 
+    padding: 15px 35px;            
+}
+a:hover {
+    color: red;
+}  
+ul li a {
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    font-size: 20px;
+    display: block;
+}
