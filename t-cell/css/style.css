@@ -11,115 +11,154 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 div {
     outline: 2px solid red;
 }
 .wrapper {
-    width: 1000px;
-    margin: 0 auto;
+    width: 1200px;
     background: yellowgreen;
+    margin: 0 auto;
     text-align: center;
 }
-
-
-
-.clear {
-    clear: left;
+/*----------------1------------------*/
+.table-cell-1 {
+    width: 100%;
+    height: 100px;
+    
 }
-.in-float {
-    float: left;
+.table-cell-1 div {
+    width: 400px;
+    height: 100px;
+    display: table-cell;
+}
+/*----------------2------------------*/
+.table-cell-2 {
+    width: 100%;
     height: 100px;
 }
-
-
-/* ---------- FLOAT 1 ---------- */
-.float-1 .in-float {
-    width: 33.33%;
-}
-/* ---------- FLOAT 2 ---------- */
-.float-2 .in-float {
-    width: 50%;
-}
-.float-2-cld-1 div {
-    height: 50%;
-}
-.float-2-cld-2 div {
-    height: 33.33%;
-}
-/* ---------- FLOAT 3 ---------- */
-.float-3-cld-1 {
-    width: 25%;
-}
-.float-3-cld-2 {
-    width: 75%;
-}
-.float-3-cld-2-cld-1, .float-3-cld-2-cld-2 {
-    height: 50%;
-}
-.float-3-cld-2-cld-2-cld {
-    float: left;
-    width: 50%;
+.tbl-1 {
+    width: 600%;
     height: 100%;
+    display: table-cell;
 }
-/* ---------- FLOAT 4 ---------- */
-.in-f-float-4_1 {
-    width: 75%;
+.tbl-2 {
+    width: 600%;
+    height: 100%;
+    display: table-cell;
 }
-.in-f-float-4_2 {
-    width: 25%;
-}
-.in-f-float-4_1-cld {
+.tbl-1 div {
+    width: 600px;
     height: 50px;
 }
-.in-f-float-4_1-cld-1 {
-    width: 50%;
+.tbl-2 div {
+    width: 600px;
+    height: 33.33px;
+}
+/*----------------3------------------*/
+.table-cell-3 {
+    width: 100%;
+    height: 100px;
+}
+.d-1 {
+    width: 400px;
+    height: 100px;
+    display: table-cell;
+}
+.t-cell {
+    width: 800px;
+    height: 100px;
+    display: table-cell;
+}
+.d-2 {
+    width: 800px;
     height: 50px;
 }
-.in-f-float-4_1-cld-2 {
-    width: 50%;
+.t-cell-a {
+    width: 800px;
     height: 50px;
 }
-.in-f-float-4_1-cld-1-cld-1 {
-    height: 25px;
+.t-cell-a div {
+    width: 400px;
+    height: 50px;
+    display: table-cell;
 }
-.in-f-float-4_1-cld-1-cld-2 {
-    height: 25px;
+/*----------------4------------------*/
+.table-cell-4 {
+    width: 100%;
+    height: 150px;
 }
-.d {
-    width: 50%;
-    height: 25px;
-    float: left;
+.t-cell-1 {
+    width: 800px;
+    height: 150px;
+    display: table-cell;
 }
+.t-cell-2 {
+    width: 400px;
+    height: 150px;
+    display: table-cell;
+}
+.tc-1 {
+    width: 800px;
+    height: 50%;
+}
+.tc-2 {
+    width: 800px;
+    height: 50%;
+}
+.tc-2-1 {
+    width: 400px;
+    height: 75px;
+    display: table-cell;
+}
+.tc-2-2 {
+    width: 400px;
+    height: 75px;
+    display: table-cell;
+}
+.tc-2-1-a {
+    width: 400px;
+    height: 50%;
+}
+.tc-2-1-b {
+    width: 400px;
+    height: 50%;
+}
+.tc-2-1-b div {
+    width: 200px;
+    height: 37.5px;
+    display: table-cell;
+}
+/*----------------ul------------------*/
 a {
     color: red;
     font-size: 20px;

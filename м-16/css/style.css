@@ -1,0 +1,300 @@
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+
+
+        .wrapper {
+            background-color: black;
+        }
+       .div1 {
+            color: yellow;
+            background-color: black;
+            width: 1000px;
+            margin: 0px auto;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .h1 {
+            color: limegreen;
+            font-size: 30px;
+            line-height: 60px;
+            font-weight: 800;
+            text-align: center; 
+        } 
+        #main {
+            color: red;
+        }
+        .h2 {
+            color: aqua;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 800;
+            text-align: center; 
+            margin: 30px; 
+        }
+        .div2 {
+            width: 400px;
+            height: 300px;
+            overflow: auto scroll;
+            margin: 0px auto;
+            border: 5px solid yellowgreen;
+            padding: 10px;
+        }
+        .div2 p {
+            color: yellow;
+        }
+        .div3 {
+            width: 300px;
+            height: 300px;
+            overflow: auto scroll;
+            margin: 0px auto;
+            border: 5px solid yellowgreen; 
+            padding: 10px;
+        }
+        .div3 p {
+            color: yellow;
+        }
+
+        /*-----------menu------------*/
+        
+        .menu {
+            display: flex;
+            justify-content: center;            
+        }
+        .first {
+            display: flex;
+            padding-top: 5px;
+            align-items: center;     
+        }
+        .first a {    
+            display: block;
+            text-align: center;        
+            color: lightseagreen;
+            text-decoration: none;
+            text-transform: uppercase;         
+        }
+        .first a:hover {
+            background-color: rgb(165, 126, 42);
+            color: red;
+        }
+        .first > li > a {
+            padding: 10px 10px 10px 40px;          
+        }
+        .first > li > a:hover {
+            padding: 15px 15px 15px 45px;
+        }
+        .sprite1 {
+            position: relative;
+        }
+        .sprite1 > a::before {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -48px -10px;                     
+            position: absolute;
+            width: 16px;
+            height: 16px; 
+            left: 13px;   
+            top: 8px;      
+        }
+        .sprite1 > a:hover:before {              
+            top: 13px;      
+        }
+        .sprite2 {
+            position: relative;
+        }
+        .sprite2 > a::before {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -10px -10px;                     
+            position: absolute;
+            width: 18px;
+            height: 16px; 
+            left: 13px;   
+            top: 9px;      
+        }
+        .sprite2 > a:hover:before {              
+            top: 14px;      
+        }
+        .parent {
+            position: relative;
+        }
+        .parent > .drop-a::after {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -84px -46px;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            right: 13px;
+            top: 10px;
+        }
+        .parent > .drop-a:hover:after {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -84px -10px;
+            position: absolute;
+            top: 15px;
+        }
+        .parent-2 {
+            position: relative;
+        }
+        .parent-2 > .drop-b::before {
+            content: "";
+            background: url("../../sprites/css_sprites.png") -46px -46px;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 9px;
+            top: 10px;
+        }
+        .parent-2 > .drop-b:hover:before {
+            background: url("../../sprites/css_sprites.png") -10px -46px;
+            width: 16px;
+            height: 16px;            
+            top: 15px;
+        }
+        .first > li:last-child {
+            border-right: none;            
+        }
+        .sprite1,
+        .sprite2,
+        .parent {
+            background-color: brown;
+            border-right: 2px solid lawngreen;                        
+        }        
+        
+        .parent .drop-a {
+            padding: 10px 40px 10px 10px; 
+        }
+        .parent .drop-a:hover {
+            padding: 15px 45px 15px 15px; 
+        }
+        .parent {
+            position: relative;
+        }           
+        .cld {
+           position: absolute; 
+           top: 100%;
+           left: 0;
+        }
+        .cld a {
+            padding: 10px;
+            background-color: brown;
+        }
+        .cld a:hover {
+            padding: 15px;            
+        }
+        .cld > .parent-2 {
+            position: relative;
+            
+        }
+        .cld > li {
+            border-bottom: 2px solid yellow;
+        }
+        .cld > li:last-child {
+            border-bottom: none;
+        }
+        .cld-2 {
+            position: absolute;
+            top: 0;
+            right: 100%;
+        }
+        .cld-2 > li {
+            border-bottom: 2px solid yellow;
+        }
+        .cld-2 > li:last-child {
+            border-bottom: none;
+        }
+        .parent > .cld {
+            display: none;
+        }
+        .parent:hover > .cld {
+            display: block;
+        }
+        .parent-2 > .cld-2 {
+            display: none;
+        }
+        .parent-2:hover > .cld-2 {
+            display: block;
+        }
+        
+        
+              
+
+        /*-------------------basement-----------------------*/
+        .basement {            
+            display: flex;
+            padding: 30px; 
+            justify-content: center;                     
+        }
+        .bas-cld {            
+            display: flex;
+            
+        }
+        .basement .bas-cld li {
+            width: 100px;
+            height: 100px;
+            border: 2px solid rosybrown;
+        }
+        .bas-cld > li > a {
+            display: block;
+            background: url("../../sprites/sprite-icon-8.jpg") 0 -500px ;
+            width: 100px;
+            height: 100px;
+        }
+        .bas-cld > li + li > a {
+            display: block;
+            background: url("../../sprites/sprite-icon-8.jpg") 600px -500px ;
+            width: 100px;
+            height: 100px;
+        }       
+        .bas-cld > li + li + li > a {
+            display: block;
+            background: url("../../sprites/sprite-icon-8.jpg") 500px -500px ;
+            width: 100px;
+            height: 100px;
+        }
+        .bas-cld > li + li + li + li > a {
+            display: block;
+            background: url("../../sprites/sprite-icon-8.jpg") 400px -500px ;
+            width: 100px;
+            height: 100px;
+        }
